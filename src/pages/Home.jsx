@@ -1,8 +1,23 @@
 import {React, Suspense} from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
+import Island from '../models/Island'
 
 function Home() {
+
+  const adjustIslandForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition = [0, -6.5, -43];
+    let rotation = [0.1, 4.7, 0 ];
+
+    if(window.innerWidth < 768){
+     screenScale = [0.9,0.9,0.9];
+    }else{
+      screenScale = [1,1,1];
+    }
+    return [screenScale, screenPosition, rotation]
+  }
+  const [islandScale, islandPostion, islandRotation] = adjustIslandForScreenSize();
   return (
     <>
     <section className='w-full h-screen relative'>
@@ -22,8 +37,13 @@ function Home() {
          <pointLight/>
          <spotLight/>
          <hemisphereLight/>
+         <Island
+           position = {islandPostion}
+           scale = {islandScale}
+           rotation = {islandRotation}
+           
+          />
         </Suspense>
-
       </Canvas>
     </section>
     </>
