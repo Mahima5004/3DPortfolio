@@ -3,6 +3,10 @@ import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 import Island from '../models/Island'
 
+import Sky from '../models/Sky'
+import Bird from '../models/Bird'
+import Plane from '../models/Plane'
+
 function Home() {
 
   const adjustIslandForScreenSize = () => {
@@ -32,17 +36,20 @@ function Home() {
       >
         <Suspense fallback={<Loader/>}>
          
-         <directionalLight/>
-         <ambientLight/>
-         <pointLight/>
+         <directionalLight position = {[1,1,1]} intensity = {2}/>
+         <ambientLight intensity = {0.5}/>
+         {/* <pointLight/> */}
          <spotLight/>
-         <hemisphereLight/>
+         <hemisphereLight skyColor = "b1e1ff" groundColor = "#000000"/>
+         <Sky/>
+         <Bird/>
          <Island
            position = {islandPostion}
            scale = {islandScale}
            rotation = {islandRotation}
            
           />
+          {/* <Plane/>  */}
         </Suspense>
       </Canvas>
     </section>
