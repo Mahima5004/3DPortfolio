@@ -12,7 +12,7 @@ function Home() {
    
   //adjusting island size and based on screen size
   const [isRotating, setIsRotating] = useState(false);
-  const [currentStage, setCurrentStage] = useState(0);  // 0 - island, 1 - plane, 2 - bird
+  const [currentStage, setCurrentStage] = useState(1);  // 0 - island, 1 - plane, 2 - bird
 
 
   const adjustIslandForScreenSize = () => {
