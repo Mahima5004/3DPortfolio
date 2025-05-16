@@ -7,12 +7,29 @@ import Sky from '../models/Sky'
 import Bird from '../models/Bird'
 import Plane from '../models/Plane'
 import HomeInfo from '../components/HomeInfo'
+import sakura from '../assets/sakura.mp3'
+import { useEffect, useRef } from 'react'
+import { soundoff, soundon } from '../assets/icons'
 
 function Home() {
    
   //adjusting island size and based on screen size
+  const audioRef = useRef(new Audio(sakura));
+  audioRef.current.loop = true;
+  audioRef.current.volume = 0.4;
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);  // 0 - island, 1 - plane, 2 - bird
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+
+  useEffect(() => {
+     if(isPlayingMusic){
+      audioRef.current.play();
+     }
+
+     return () => {
+       audioRef.current.pause();
+     }
+  }, [isPlayingMusic]);
 
 
   const adjustIslandForScreenSize = () => {
@@ -81,13 +98,26 @@ function Home() {
           />
 
           <Plane
-          planeScale = {planeScale}
-          planePosition = {planePosition}
+          scale = {planeScale}
+          position = {planePosition}
           isRotating = {isRotating}
           rotation = {[0,20,0]}
           /> 
         </Suspense>
       </Canvas>
+
+      <div className='absolute bottom-2 left-2'>
+        <img 
+        src= {isPlayingMusic ? soundoff: soundon}
+        alt="sound"
+        className='w-10 h-10 object-contain cursor-pointer'
+        onClick = {
+          () => {
+            setIsPlayingMusic(!isPlayingMusic);
+          }
+        } 
+        />
+      </div>
     </section>
     </>
   )
