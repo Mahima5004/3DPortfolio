@@ -97,29 +97,33 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "Software Engineer",
+        title: "Graduate Engineer Trainee",
         company_name: "Jio Platforms Limited",
+        project: 'Digital Asset Management',
         icon: jioBlue,
         iconBg: "#accbe1",
         date: "December 2023 - April 2024",
         points: [
+            "Technologies: JavaScript, React.js, Tailwind CSS, Git, HTML, CSS, DevOps ",
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+           
         ],
     },
     {
         title: "Software Developer",
         company_name: "Jio Platforms Limited",
+        project: 'Jio Rating and Charging System',
         icon: jioRed,
         iconBg: "#fbc3bc",
         date: "April 2024 - Present",
         points: [
+            "Technologies: JavaScript, React.js, Tailwind CSS, SAP BRIM, SAP CC, Git, HTML, CSS, DevOps",
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+           
         ],
     },
     

@@ -20,7 +20,7 @@ function Projects() {
           </p>
 
           {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
+          <div className='mt-10 lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
@@ -36,8 +36,8 @@ function Projects() {
               <h4 className='text-2xl font-poppins font-semibold'>
                 {project.name}
               </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
-              <div className='mt-5 flex items-center gap-2 font-poppins'>
+              <p className='mt-2 text-slate-500 '>{project.description}</p>
+              <div className='mt-6 flex items-center gap-2 font-poppins'>
                 <Link
                   to={project.link}
                   target='_blank'

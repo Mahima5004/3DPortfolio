@@ -6,6 +6,8 @@ import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 import  useAlert  from '../hooks/useAlert'
 import Alert from '../components/Alert'
+import { socialLinks } from '../constants';
+
 
 function Contact() {
 
@@ -88,6 +90,7 @@ function Contact() {
 
 
   return (
+    <>
     <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
 
       {alert.show && <Alert {...alert}/>}
@@ -187,7 +190,56 @@ function Contact() {
           </Suspense>
         </Canvas>
       </div>
+      
     </section>
+    
+
+    {/* //social links footer */}
+
+    <footer className="text-gray-800 py-5">
+      <div className="max-container mx-auto flex flex-col lg:flex-row justify-between items-center px-6">
+
+        {/* Left side text */}
+        <div className="mb-6 lg:mb-0 text-center lg:text-left max-w-xl">
+          <p className="text-2xl font-semibold mb-4">
+            Let's Stay Connected! 🚀
+          </p>
+          <p className="text-lg font-medium text-opacity-80">
+            Whether it's for collaborations, questions, or just a casual chat—I'd love to connect with you. Let's build something amazing together!
+          </p>
+        </div>
+
+        {/* Right side: Social links */}
+        <div className="flex justify-center lg:justify-end gap-8">
+          {socialLinks.map((social, index) => (
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-white hover:text-blue-300 transform hover:scale-110 transition duration-300 ease-in-out"
+            >
+              <img
+                src={social.iconUrl}
+                alt={social.name}
+                className="w-7 h-7 transform transition duration-200 hover:scale-125"
+              />
+              <span className="text-md font-semibold">{social.name}</span>
+            </a>
+          ))}
+        </div>
+
+      </div>
+
+      {/* Footer Text */}
+      <div className="text-center text-sm text-gray-200 mt-8">
+        <p>&copy; {new Date().getFullYear()} Mahima. All rights reserved.</p>
+      </div>
+    </footer>
+
+    
+</>
+
   )
 }
 

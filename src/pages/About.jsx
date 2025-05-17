@@ -15,9 +15,10 @@ function About() {
 
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            Software Engineer based in India, specializing in 
-            building (and occassionally designing) exceptional
-            digital experiences.
+            a software engineer driven by curiosity and a passion for building purposeful tech. 
+            Beyond clean code and seamless interfaces, 
+            I love solving real-world problems and turning ideas into intuitive digital experiences. 
+            This page isn’t just about what I do — it’s about why I do it.
           </p>
         </div>
 
@@ -45,9 +46,10 @@ function About() {
           <h3 className='subhead-text'>Work Experiance</h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
              <p>
-            Software Engineer based in India, specializing in 
-            building (and occassionally designing) exceptional
-            digital experiences.
+            Every project, role, and challenge has shaped the engineer I am today. 
+            From writing my first lines of code to building real-world applications, 
+            my journey is a blend of growth, grit, and curiosity. 
+            Here's a look at the experiences that have sharpened my skills and fueled my passion for problem-solving.
           </p>
           </div>
 
@@ -87,9 +89,13 @@ function About() {
                     <h3 className='text-black text-xl font-poppins font-semibold'>
                       {experience.title}
                     </h3>
-                    <p className='text-black-500 font-medium font-base'
+                    <p className='text-gray-800 font-medium font-base'
                       style={{ margin: 0 }}>
                       {experience.company_name}
+                    </p>
+                    <p className='text-gray-500 text-xs'
+                      style={{ margin: 0 }}>
+                      {experience.project}
                     </p>
                   </div>
                   <ul className='my-5 list-disc ml-5 space-y-2'>
