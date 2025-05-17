@@ -17,26 +17,26 @@ const renderContent = {
     <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
       Hi I am <span className='font-semibold'>Mahima</span> 👋
       <br />
-      A Software Engineer
+       a <span className='font-semibold'>software engineer</span> crafting smart solutions
     </h1>
   ),
   2: (
     <Infobox
-      text="Have a look at my experience"
+      text="Not just pixels and code — discover the person behind the craft"
       link="/about"
       btnText="Learn more"
     />
   ),
   3: (
     <Infobox
-      text="Have a look at my ProjEects"
+      text="Where ideas meet execution — explore my work"
       link="/projects"
       btnText="View Projects"
     />
   ),
   4: (
     <Infobox
-      text="Need a project done or looking for dev? I'm just a click away"
+      text="Don’t be a stranger — whether it’s for collaboration, conversation, or just coffee"
       link="/contact"
       btnText="Let's Connect"
     />

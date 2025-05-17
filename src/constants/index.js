@@ -1,6 +1,5 @@
-import {starbucks, tesla } from "../assets/images";
+import {jioBlue, jioRed, logo } from "../assets/images";
 import {
-    car,
     contact,
     css,
     estate,
@@ -8,44 +7,31 @@ import {
     git,
     github,
     html,
+    java,
     javascript,
     linkedin,
     mongodb,
     nodejs,
     pricewise,
     react,
-    redux,
-    sass,
+    sapcc,
     snapgram,
     summiz,
     tailwindcss,
     threads,
+    groovy
 } from "../assets/icons";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
+
     {
         imageUrl: html,
         name: "HTML",
+        type: "Frontend",
+    },
+    {
+        imageUrl: css,
+        name: "CSS",
         type: "Frontend",
     },
     {
@@ -54,30 +40,8 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    
-   
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
         imageUrl: react,
         name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
         type: "Frontend",
     },
     {
@@ -85,6 +49,49 @@ export const skills = [
         name: "Tailwind CSS",
         type: "Frontend",
     },
+     {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+     {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+     {
+        imageUrl: java,
+        name: "Java",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+     {
+        imageUrl: sapcc,
+        name: "SAPCC",
+        type: "SAP BRIM",
+    },
+     {
+        imageUrl: groovy,
+        name: "Groovy",
+        type: "Programming Language",
+    },
+    
+    
+    
     
 ];
 
@@ -92,7 +99,7 @@ export const experiences = [
     {
         title: "Software Engineer",
         company_name: "Jio Platforms Limited",
-        icon: starbucks,
+        icon: jioBlue,
         iconBg: "#accbe1",
         date: "December 2023 - April 2024",
         points: [
@@ -105,7 +112,7 @@ export const experiences = [
     {
         title: "Software Developer",
         company_name: "Jio Platforms Limited",
-        icon: tesla,
+        icon: jioRed,
         iconBg: "#fbc3bc",
         date: "April 2024 - Present",
         points: [
@@ -152,15 +159,8 @@ export const projects = [
         description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
         link: 'https://github.com/Mahima5004/Jerry-The-Voice-Bot',
     },
-    {   
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
     {
-        iconUrl: snapgram,
+        iconUrl: summiz,
         theme: 'btn-back-pink',
         name: 'MemoryGame',
         description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
@@ -174,7 +174,7 @@ export const projects = [
         link: 'https://github.com/Mahima5004/DrumKit',
     },
     {
-        iconUrl: summiz,
+        iconUrl: snapgram,
         theme: 'btn-back-yellow',
         name: 'The Bid Game',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',

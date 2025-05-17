@@ -15,9 +15,9 @@ function Navbar() {
              ? 'text-blue-500' : 'text-black'}>
                 About
             </NavLink>
-            <NavLink to= '/experience' className={({isActive}) => isActive 
+            <NavLink to= '/projects' className={({isActive}) => isActive 
              ? 'text-blue-500' : 'text-black'}>
-                Experience
+                Projects
             </NavLink>
             <NavLink to= '/contact' className={({isActive}) => isActive 
              ? 'text-blue-500' : 'text-black'}>
