@@ -19,7 +19,8 @@ import {
     summiz,
     tailwindcss,
     threads,
-    groovy
+    groovy,
+    three
 } from "../assets/icons";
 
 export const skills = [
@@ -83,6 +84,12 @@ export const skills = [
         imageUrl: sapcc,
         name: "SAPCC",
         type: "SAP BRIM",
+    },
+    {
+        imageUrl: three,
+        name: "Three.js",
+        type: "Frontend",
+        
     },
      {
         imageUrl: groovy,
