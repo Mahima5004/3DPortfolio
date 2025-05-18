@@ -156,39 +156,40 @@ export const socialLinks = [
 ];
 
 export const projects = [
+     {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'Jerry The Voice Bot',
+        description: 'Developed voice-enabled bot that transcribes speech to text, processes natural language input, and provides spoken responses',
+        link: 'https://github.com/Mahima5004/Jerry-The-Voice-Bot',
+    },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Disease Predictor',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        description: 'Developed a Machine learning based Model which predicts the disease based on the symptoms provided by the user.',
         link: 'https://github.com/Mahima5004/DiseasePredictor',
     },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Jerry The Voice Bot',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/Mahima5004/Jerry-The-Voice-Bot',
-    },
+   
     {
         iconUrl: summiz,
         theme: 'btn-back-pink',
         name: 'MemoryGame',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+        description: 'Developed a simple, interactive card-matching game built with JavaScript, featuring responsive design and smooth gameplay logic',
         link: 'https://github.com/Mahima5004/MemoryGame',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Drum Kit',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        description: 'Developed a fun, interactive drum kit built with JavaScript, allowing users to play sounds using keyboard or mouse inputs with real-time audio',
         link: 'https://github.com/Mahima5004/DrumKit',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-yellow',
         name: 'The Bid Game',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        description: 'Developed a fun bidding game built with JavaScript where players compete by placing the highest bid to win',
         link: 'https://github.com/Mahima5004/react_bidGame',
     }
 ];
